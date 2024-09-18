@@ -28,6 +28,10 @@ Possible topics:
 - A web solution to keep track of your programming errors.
 - A web solution to keep track of your plans in life.
 
+My topic:
+
+- A web solution to keep track of your recipes.
+
 ## Training for aspiring professionals
 
 - create an HTML page with a form
