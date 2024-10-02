@@ -11,37 +11,45 @@
         }
         body {
             font-family:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            letter-spacing: 0.05em;
-            margin:         2em;
-            padding:        0;
+            margin:         0 2em 0 2em;
+            letter-spacing: 0.08em;
         }
 
         header, main, footer {
             padding:            2rem;
             max-width:          70vw;
-            background-color:   white;
-            box-shadow:         0 0 10px rgba(0, 0, 0, 0.1);
+            background-color:   lightgoldenrodyellow;
+            box-shadow:         0 0 10px rgba(216, 0, 255, 0.3);
+            border:             2px solid slateblue;
         }
+
         header, footer {
-            text-align:     center;
-            margin:         0 auto;
+            text-align: center;
+            margin:     0 auto;
         }
+
+        @media(width <= 1250px) {
+            header, main, footer {
+                max-width:  90vw;
+            }
+        }
+
         header {
-            border-radius:  0                         0
-                            var(--size-corner-radius) var(--size-corner-radius);
             font-weight:    bold;
+            border-radius:  0 0 var(--size-corner-radius) var(--size-corner-radius);
         }
+
         main {
-            border-radius:  var(--size-corner-radius);
             margin:         1rem auto;
+            border-radius:  var(--size-corner-radius);
         }
+
         footer {
-            border-radius:  var(--size-corner-radius) var(--size-corner-radius)
-                            0                         0;
+            border-radius: var(--size-corner-radius) var(--size-corner-radius) 0 0;
         }
 
         h1, h2 {
-            color: darkblue;
+            color: slateblue;
         }
 
         p, ul {
@@ -49,20 +57,20 @@
         }
 
         table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 1rem;
+            width:              100%;
+            border-collapse:    collapse;
+            margin-bottom:      1rem;
         }
 
         th, td {
-            padding: 1rem;
+            padding:    1rem;
             text-align: left;
-            border: 1px solid #ddd;
+            border:     1px solid #ddd;
         }
 
         th {
-            background-color: darkblue;
-            color: white;
+            background-color:   slateblue;
+            color:              lightblue;
         }
 
         tbody tr:nth-child(even) {
@@ -71,25 +79,23 @@
 
         /* Style for pop-up info (abbr and dfn) */
         abbr, dfn {
-            border-bottom: 1px dotted darkblue;
-            cursor: help;
-            color: darkblue;
-            font-style: normal;
-            font-weight: bold;
+            border-bottom:  1px dotted slateblue;
+            cursor:         help;
+            color:          slateblue;
+            font-style:     normal;
+            font-weight:    bold;
         }
 
         /* Holidays less prominent */
         .holiday {
-            background-color: #f0f0f0;
-            color: #777;
+            background-color:   lightblue;
+            color:              #777;
         }
 
         /* Exercise dates more prominent */
         .exercise {
             font-weight: bold;
         }
-
-
 
     </style>
 </head>
