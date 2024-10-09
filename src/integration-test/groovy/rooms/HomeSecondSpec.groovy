@@ -33,4 +33,19 @@ class HomeSecondSpec extends GebSpec {
         then: "Home page is displayed, again"
             title == "Homepage"
     }
+
+    void "Validate Standort und Kontakte"() {
+        when: "The homepage is visited"
+            go  "http://www.fhnw.ch/de/"
+        then: "Title is homepage"
+            title == "FHNW: Wo sich die Zukunft bildet | FHNW"
+
+        when: "click on contact link"
+//            println($("body").text())
+            println($("#maincontent").text())
+//            $("a", text: "Standorte und Kontakt").click()
+//            $("a", text: "Standorte und Kontakt").click()
+        then: "Title is Standorte und Kontakte"
+            title == "FHNW: Wo sich die Zukunft bildet | FHNW"
+    }
 }
